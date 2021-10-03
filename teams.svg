@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="400" height="600" viewBox="-200.0 -300.0 400 600">
+<defs>
+</defs>
+<text x="-80" y="-260" font-size="12" fill="black" dy="0em">Saturday, 2 October</text>
+<rect x="-85" y="-85" width="80" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="-80" y="-70" font-size="12" fill="black"><tspan x="-80" dy="0em">Team Door</tspan><tspan x="-80" dy="1em">Wei</tspan><tspan x="-80" dy="1em">Carmen</tspan><tspan x="-80" dy="1em">Ke</tspan></text>
+<rect x="75" y="-85" width="80" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="80" y="-70" font-size="12" fill="black"><tspan x="80" dy="0em">Team Window</tspan><tspan x="80" dy="1em">Olga</tspan><tspan x="80" dy="1em">Griffin</tspan><tspan x="80" dy="1em">Frances</tspan></text>
+<rect x="75" y="-245" width="80" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="80" y="-230" font-size="12" fill="black"><tspan x="80" dy="0em">Team Lectern</tspan><tspan x="80" dy="1em">Gabby</tspan><tspan x="80" dy="1em">Thao</tspan><tspan x="80" dy="1em">Kai</tspan></text>
+<rect x="-85" y="-245" width="95" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="-80" y="-230" font-size="12" fill="black"><tspan x="-80" dy="0em">Team Whiteboard</tspan><tspan x="-80" dy="1em">Negin</tspan><tspan x="-80" dy="1em">Sophia</tspan><tspan x="-80" dy="1em">Karan</tspan><tspan x="-80" dy="1em">Lulu</tspan></text>
+<rect x="-5" y="-165" width="80" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="0" y="-150" font-size="12" fill="black"><tspan x="0" dy="0em">Team Center</tspan><tspan x="0" dy="1em">Andres</tspan><tspan x="0" dy="1em">Pei</tspan><tspan x="0" dy="1em">Arthur</tspan></text>
+</svg>
