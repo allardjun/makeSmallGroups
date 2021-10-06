@@ -5,6 +5,7 @@ def makeSmallGroups(STUDENTLIST):
     import random
     from datetime import date
     import drawSvg as draw
+    import os
 
 
     # SHUFFLE STUDENTS
@@ -29,59 +30,62 @@ def makeSmallGroups(STUDENTLIST):
     # Team Door
     # Team Whiteboard Corner
 
-    d = draw.Drawing(400, 600, origin='center', displayInline=False)
+    d = draw.Drawing(300, 350, origin='center', displayInline=False)
 
     # Draw text
-    d.append(draw.Text(datestr, 12, -80, 260, fill='black'))
+    d.append(draw.Text(datestr, 12, -120, 150, fill='black'))
 
-    box = draw.Rectangle(-80-5,70-55,80,70,fill='#ffffff',stroke_width=2,stroke='black')
+    box = draw.Rectangle(-120-5,-40-55,80,70,fill='#ffffff',stroke_width=2,stroke='black')
     groupLabel = draw.Text(['Team Door',
         student_list[0],
         student_list[1],
         student_list[2]],
-        12,-80,70,fill='black')
+        12,-120,-40,fill='black')
     d.append(box)
     d.append(groupLabel)
 
     # Draw a rectangle
-    box = draw.Rectangle(+80-5,70-55,80,70,fill='#ffffff',stroke_width=2,stroke='black')
+    box = draw.Rectangle(+55-5,-40-55,95,70,fill='#ffffff',stroke_width=2,stroke='black')
     groupLabel = draw.Text(['Team Window',
         student_list[3],
         student_list[4],
         student_list[5]],
-        12,+80,70,fill='black')
+        12,+55,-40,fill='black')
     d.append(box)
     d.append(groupLabel)
 
-    box = draw.Rectangle(+80-5,230-55,80,70,fill='#ffffff',stroke_width=2,stroke='black')
+    box = draw.Rectangle(+60-5,120-55,90,70,fill='#ffffff',stroke_width=2,stroke='black')
     groupLabel = draw.Text(['Team Lectern',
         student_list[6],
         student_list[7],
-        student_list[8]],
-        12,+80,230,fill='black')
+        student_list[8],
+        student_list[9]],
+        12,+60,120,fill='black')
     d.append(box)
     d.append(groupLabel)
 
-    box = draw.Rectangle(-80-5,230-55,95,70,fill='#ffffff',stroke_width=2,stroke='black')
+    box = draw.Rectangle(-120-5,120-55,115,70,fill='#ffffff',stroke_width=2,stroke='black')
     groupLabel = draw.Text(['Team Whiteboard',
-        student_list[9],
         student_list[10],
         student_list[11],
-        student_list[12]],
-        12,-80,230,fill='black')
+        student_list[12],
+        student_list[13]],
+        12,-120,120,fill='black')
     d.append(box)
     d.append(groupLabel)
 
-    box = draw.Rectangle(0-5,150-55,80,70,fill='#ffffff',stroke_width=2,stroke='black')
+    box = draw.Rectangle(-20-5,40-55,90,70,fill='#ffffff',stroke_width=2,stroke='black')
     groupLabel = draw.Text(['Team Center',
-        student_list[13],
         student_list[14],
-        student_list[15]],
-        12,0,150,fill='black')
+        student_list[15],
+        student_list[16]],
+        12,-20,40,fill='black')
     d.append(box)
     d.append(groupLabel)
 
-    d.saveSvg('example.svg')
+    d.saveSvg('teams.svg')
+
+    os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams.svg -o teams.png')
 
 
 if __name__ == '__main__':
