@@ -66,7 +66,7 @@ def makeSmallGroups(STUDENTLIST):
 
     d.saveSvg('teams.svg')
 
-    #os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams.svg -o teams.png')
+    os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams.svg -o teams.png')
 
 
 if __name__ == '__main__':
