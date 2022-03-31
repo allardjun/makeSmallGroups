@@ -3,15 +3,31 @@
      width="300" height="350" viewBox="-150.0 -175.0 300 350">
 <defs>
 </defs>
-<text x="-120" y="-150" font-size="12" fill="black" dy="0em">Wednesday, 6 October</text>
+<text x="-120" y="-150" font-size="12" fill="black" dy="0em">Thursday, 31 March</text>
 <rect x="-125" y="25" width="80" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="-120" y="40" font-size="12" fill="black"><tspan x="-120" dy="0em">Team Door</tspan><tspan x="-120" dy="1em">Karan</tspan><tspan x="-120" dy="1em">Sophia</tspan><tspan x="-120" dy="1em">Pei</tspan></text>
+<text x="-120" y="40" font-size="12" fill="black" dy="0em">Team Door</text>
+<text x="-120" y="50" font-size="12" fill="black" dy="0em">Wei</text>
+<text x="-120" y="60" font-size="12" fill="black" dy="0em">Negin</text>
+<text x="-120" y="70" font-size="12" fill="black" dy="0em">Carmen</text>
 <rect x="50" y="25" width="95" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="55" y="40" font-size="12" fill="black"><tspan x="55" dy="0em">Team Window</tspan><tspan x="55" dy="1em">Frances</tspan><tspan x="55" dy="1em">Wei</tspan><tspan x="55" dy="1em">Negin</tspan></text>
+<text x="55" y="40" font-size="12" fill="black" dy="0em">Team Window</text>
+<text x="55" y="50" font-size="12" fill="black" dy="0em">Pei</text>
+<text x="55" y="60" font-size="12" fill="black" dy="0em">Arthur</text>
+<text x="55" y="70" font-size="12" fill="black" dy="0em">Chaorong</text>
 <rect x="55" y="-135" width="90" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="60" y="-120" font-size="12" fill="black"><tspan x="60" dy="0em">Team Lectern</tspan><tspan x="60" dy="1em">Carmen</tspan><tspan x="60" dy="1em">Kai</tspan><tspan x="60" dy="1em">Olga</tspan><tspan x="60" dy="1em">Griffin</tspan></text>
+<text x="60" y="-120" font-size="12" fill="black" dy="0em">Team Lectern</text>
+<text x="60" y="-110" font-size="12" fill="black" dy="0em">Frances</text>
+<text x="60" y="-100" font-size="12" fill="black" dy="0em">Gabby</text>
+<text x="60" y="-90" font-size="12" fill="black" dy="0em">Griffin</text>
+<text x="60" y="-80" font-size="12" fill="black" dy="0em">Ke</text>
 <rect x="-125" y="-135" width="115" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="-120" y="-120" font-size="12" fill="black"><tspan x="-120" dy="0em">Team Whiteboard</tspan><tspan x="-120" dy="1em">Thao</tspan><tspan x="-120" dy="1em">Arthur</tspan><tspan x="-120" dy="1em">Andres</tspan><tspan x="-120" dy="1em">Gabby</tspan></text>
+<text x="-120" y="-120" font-size="12" fill="black" dy="0em">Team Whiteboard</text>
+<text x="-120" y="-110" font-size="12" fill="black" dy="0em">Sophia</text>
+<text x="-120" y="-100" font-size="12" fill="black" dy="0em">Karan</text>
+<text x="-120" y="-90" font-size="12" fill="black" dy="0em">Lulu</text>
 <rect x="-25" y="-55" width="90" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="-20" y="-40" font-size="12" fill="black"><tspan x="-20" dy="0em">Team Center</tspan><tspan x="-20" dy="1em">Ke</tspan><tspan x="-20" dy="1em">Lulu</tspan><tspan x="-20" dy="1em">Chaorong</tspan></text>
+<text x="-20" y="-40" font-size="12" fill="black" dy="0em">Team Center</text>
+<text x="-20" y="-30" font-size="12" fill="black" dy="0em">Olga</text>
+<text x="-20" y="-20" font-size="12" fill="black" dy="0em">Kai</text>
+<text x="-20" y="-10" font-size="12" fill="black" dy="0em">Andres</text>
 </svg>
