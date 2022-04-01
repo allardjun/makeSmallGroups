@@ -14,23 +14,32 @@ def makeSmallGroups():
     else:
         courseNumber = 'M227C'
 
+    emSize = 12
+
     studentListFile = 'studentList_' + courseNumber + '.xlsx'
     if courseNumber == 'M227C':
+        ySize = 200
+        yShift = ySize/2+20
         Teams_list = [
-            ['Whiteboard',   [+60-5,  120-55, 120, 70], 4],
-            ['Door',         [-120-5, 20-55,  80, 70], 4],
-            ['Window',       [+85-5,  20-55,  95, 70], 4],
-            ['Lectern',      [-120-5, 120-55, 115,70], 4],
-            ['Projector',    [-20-5,  20-55,   100, 70], 4]
+            ['Whiteboard',   [200, yShift- 30, 117, 70], 4],
+            ['Door',         [  5, yShift-115, 117, 70], 4],
+            ['Window',       [250, yShift-115, 117, 70], 4],
+            ['Lectern',      [ 35, yShift- 30, 117, 70], 4],
+            ['Projector',    [125, yShift-115, 117, 70], 4]
             ]
+        datepos = [5, 20]
     elif courseNumber == 'P50':
+        ySize = 200
+        yShift = ySize/2+20
         Teams_list = [
-            ['Front Door', [-120-5,-40-55,80,70], 3],
-            ['Back Door', [+55-5,-40-55,95,70], 3],
-            ['Lectern',[+60-5,120-55,90,70], 4],
-            ['Middle',[-120-5,120-55,115,70], 3],
-            ['Back Corner', [-20-5,40-55,90,70], 3]
+            ['Lectern',     [200, yShift- 30, 117, 70], 4],
+            ['Back Corner', [  5, yShift-115, 120, 70], 3],
+            ['Back Door',   [250, yShift-115, 117, 70], 4],
+            ['Front Door',  [ 35, yShift- 30, 117, 70], 4],
+            ['Middle',      [125, yShift-115, 117, 70], 4]
             ]
+        datepos = [5, 20]
+
 
     # SHUFFLE STUDENTS
 
@@ -39,8 +48,8 @@ def makeSmallGroups():
 
     random.shuffle(student_list)
 
-    #print(student_list)
-    #print(len(student_list))
+    print(student_list)
+    print(len(student_list))
 
     # DATE
 
@@ -51,31 +60,31 @@ def makeSmallGroups():
 
     Teams = pd.DataFrame(Teams_list, columns=['Name', 'Coords', 'NumberOfThinkers'])
 
-    d = draw.Drawing(350, 350, origin='center', displayInline=False)
-
-    d.append(draw.Text(datestr, 12, -120, 150, fill='black'))
+    d = draw.Drawing(380, ySize, origin=(0,0), displayInline=False)
 
     iStudent = 0
     for iTeam, thisTeam in Teams.iterrows():
-        box = draw.Rectangle(
-            thisTeam['Coords'][0],
-            thisTeam['Coords'][1],
-            thisTeam['Coords'][2],
-            thisTeam['Coords'][3],
-            fill='#ffffff',stroke_width=2,stroke='black')
+        if iStudent < len(student_list):
+            box = draw.Rectangle(
+                thisTeam['Coords'][0],
+                thisTeam['Coords'][1],
+                thisTeam['Coords'][2],
+                thisTeam['Coords'][3],
+                fill='#ffffff',stroke_width=2,stroke='black')
 
-        groupLabel = draw.Text('Team ' + thisTeam['Name'],
-            12,thisTeam['Coords'][0]+5,thisTeam['Coords'][1]+55,fill='black')
-        d.append(box)
-        d.append(groupLabel)
-        for iStudent_inThisTeam in range(thisTeam['NumberOfThinkers']):
-            studentLabel = draw.Text(student_list[iStudent],
-            12,thisTeam['Coords'][0]+5,thisTeam['Coords'][1]+55-10*(iStudent_inThisTeam+1),fill='black')
-            iStudent = iStudent + 1
-            d.append(studentLabel)
-            if iStudent >= len(student_list):
-                break
+            groupLabel = draw.Text('Team ' + thisTeam['Name'],
+                12,thisTeam['Coords'][0]+5,thisTeam['Coords'][1]+55,fill='black')
+            d.append(box)
+            d.append(groupLabel)
+            for iStudent_inThisTeam in range(thisTeam['NumberOfThinkers']):
+                studentLabel = draw.Text(student_list[iStudent],
+                12,thisTeam['Coords'][0]+5,thisTeam['Coords'][1]+55-emSize*(iStudent_inThisTeam+1),fill='black')
+                iStudent = iStudent + 1
+                d.append(studentLabel)
+                if iStudent >= len(student_list):
+                    break
    
+    d.append(draw.Text(datestr, 12, datepos[0], ySize-datepos[1], fill='black'))
 
     d.saveSvg('teams_' + courseNumber + '.svg')
 
@@ -83,7 +92,6 @@ def makeSmallGroups():
 
     if courseNumber=='M227C':
         os.system('./sendToGithub.sh')
-
 
 if __name__ == '__main__':
     makeSmallGroups()

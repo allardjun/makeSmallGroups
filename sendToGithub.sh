@@ -1,6 +1,6 @@
 #!/bin/bash
 
-localPathOfM227CRepo="~/git/pub/Math227C/"
+localPathOfM227CRepo="/Users/jun/git/pub/Math227C/"
 
 cp teams_M227C.svg $localPathOfM227CRepo
 
