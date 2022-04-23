@@ -21,11 +21,11 @@ def makeSmallGroups():
         ySize = 200
         yShift = ySize/2+20
         Teams_list = [
-            ['Whiteboard',   [200, yShift- 30, 117, 70], 4],
-            ['Door',         [  5, yShift-115, 117, 70], 4],
-            ['Window',       [250, yShift-115, 117, 70], 4],
-            ['Lectern',      [ 35, yShift- 30, 117, 70], 4],
-            ['Projector',    [125, yShift-115, 117, 70], 4]
+            ['Whiteboard',   [200, yShift- 30+12, 117, 70], 4],
+            ['Door',         [  5, yShift-115+12, 117, 70], 4],
+            ['Window',       [250, yShift-115+12, 117, 70], 4],
+            ['Lectern',      [ 35, yShift- 30+12, 117, 70], 4],
+            ['Projector',    [125, yShift-115+12, 117, 70], 4]
             ]
         datepos = [5, 20]
     elif courseNumber == 'P50':
@@ -45,6 +45,9 @@ def makeSmallGroups():
 
     student_df = pd.read_excel(studentListFile)
     student_list = list(student_df['Students'])
+
+    print(student_list)
+    print(len(student_list))
 
     random.shuffle(student_list)
 
@@ -73,12 +76,12 @@ def makeSmallGroups():
                 fill='#ffffff',stroke_width=2,stroke='black')
 
             groupLabel = draw.Text('Team ' + thisTeam['Name'],
-                12,thisTeam['Coords'][0]+5,thisTeam['Coords'][1]+55,fill='black')
+                12,thisTeam['Coords'][0]+5,thisTeam['Coords'][1]+emSize*thisTeam['NumberOfThinkers']+5,fill='black')
             d.append(box)
             d.append(groupLabel)
             for iStudent_inThisTeam in range(thisTeam['NumberOfThinkers']):
                 studentLabel = draw.Text(student_list[iStudent],
-                12,thisTeam['Coords'][0]+5,thisTeam['Coords'][1]+55-emSize*(iStudent_inThisTeam+1),fill='black')
+                12,thisTeam['Coords'][0]+5,thisTeam['Coords'][1]+emSize*thisTeam['NumberOfThinkers']+5-emSize*(iStudent_inThisTeam+1),fill='black')
                 iStudent = iStudent + 1
                 d.append(studentLabel)
                 if iStudent >= len(student_list):
@@ -90,8 +93,8 @@ def makeSmallGroups():
 
     os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams_' + courseNumber + '.svg -o teams_' + courseNumber + '.png')
 
-    if courseNumber=='M227C':
-        os.system('./sendToGithub.sh')
+    # if courseNumber=='M227C':
+    #     os.system('./sendToGithub.sh')
 
 if __name__ == '__main__':
     makeSmallGroups()
