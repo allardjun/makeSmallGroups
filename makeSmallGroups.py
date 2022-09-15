@@ -40,17 +40,17 @@ def makeSmallGroups():
             ]
         datepos = [5, 20]
     elif courseNumber == 'P230':
-        ySize = 200
-        yShift = ySize/2+20
+        ySize = 350
+        yShift = ySize/2+70
         Teams_list = [
-            ['Whiteboard',   [200, yShift- 30+12, 117, 70], 4],
-            ['Door',         [  5, yShift-115+12, 117, 70], 4],
-            ['Window',       [250, yShift-115+12, 117, 70], 4],
-            ['Lectern',      [ 35, yShift- 30+12, 117, 70], 4],
-            ['Center',    [125, yShift-115+12, 117, 70], 4]
+            ['Lectern',   [200, yShift- 30+12, 117, 70], 4],
+            ['Door',         [ 35, yShift-200+12, 117, 70], 4],
+            ['Window',       [200, yShift-200+12, 117, 70], 4],
+            ['Whiteboard',      [ 35, yShift- 30+12, 117, 70], 4],
+            ['Center',       [125, yShift-115+12, 117, 70], 4]
             ]
         datepos = [5, 20]
-``
+
 
     # SHUFFLE STUDENTS
 
