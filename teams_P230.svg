@@ -1,42 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 380 350" style="enable-background:new 0 0 380 350;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:2;}
-	.st1{font-family:'ArialMT';}
-	.st2{font-size:12px;}
-</style>
-<rect x="200" y="53" class="st0" width="117" height="70"/>
-<text transform="matrix(1 0 0 1 205 70)" class="st1 st2">Team Lectern</text>
-<text transform="matrix(1 0 0 1 205 82)" class="st1 st2">Brady</text>
-<text transform="matrix(1 0 0 1 205 94.1436)" class="st1 st2">Sai</text>
-<text transform="matrix(1 0 0 1 205 106.1436)" class="st1 st2">Savannah</text>
-<rect x="35" y="223" class="st0" width="117" height="70"/>
-<text transform="matrix(1 0 0 1 40 240)" class="st1 st2">Team Door</text>
-<text transform="matrix(1 0 0 1 40 252)" class="st1 st2">Manuel</text>
-<text transform="matrix(1 0 0 1 40 264)" class="st1 st2">Zhen</text>
-<text transform="matrix(1 0 0 1 40 276)" class="st1 st2">Jaewook</text>
-<text transform="matrix(1 0 0 1 40 288)" class="st1 st2">Ian</text>
-<rect x="200" y="223" class="st0" width="117" height="70"/>
-<text transform="matrix(1 0 0 1 205 240)" class="st1 st2">Team Window</text>
-<text transform="matrix(1 0 0 1 205 252)" class="st1 st2">Yuna</text>
-<text transform="matrix(1 0 0 1 205 264)" class="st1 st2">Jovan</text>
-<text transform="matrix(1 0 0 1 205 276)" class="st1 st2">Yeon</text>
-<text transform="matrix(1 0 0 1 205 288)" class="st1 st2">Cameron L</text>
-<rect x="35" y="53" class="st0" width="117" height="70"/>
-<text transform="matrix(1 0 0 1 40 70)" class="st1 st2">Team Whiteboard</text>
-<text transform="matrix(1 0 0 1 40 82)" class="st1 st2">Matthew D</text>
-<text transform="matrix(1 0 0 1 40 94)" class="st1 st2">Cameron M</text>
-<text transform="matrix(1 0 0 1 40 106)" class="st1 st2">Leon</text>
-<text transform="matrix(1 0 0 1 40 118)" class="st1 st2">Matthew H</text>
-<rect x="125" y="138" class="st0" width="117" height="70"/>
-<text transform="matrix(1 0 0 1 130 155)" class="st1 st2">Team Center</text>
-<text transform="matrix(1 0 0 1 130 167)" class="st1 st2">Nima</text>
-<text transform="matrix(1 0 0 1 130 179)" class="st1 st2">Lorenzo</text>
-<text transform="matrix(1 0 0 1 130 191)" class="st1 st2">Nick</text>
-<text transform="matrix(1 0 0 1 5 20)" class="st1 st2">Monday, 26 September</text>
-<text transform="matrix(1 0 0 1 129.2753 203.0505)" class="st1 st2">Nora</text>
-<text transform="matrix(1 0 0 1 204.9997 118.1318)" class="st1 st2">Allen</text>
-<text transform="matrix(1 0 0 1 280.2648 116.1109)" class="st1 st2">Karan</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="380" height="350" viewBox="0 -350 380 350">
+<defs>
+</defs>
+<rect x="200" y="-297.0" width="117" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="205" y="-280.0" font-size="12" fill="black" dy="0em">Team Lectern</text>
+<text x="205" y="-268.0" font-size="12" fill="black" dy="0em">Yuna</text>
+<text x="205" y="-256.0" font-size="12" fill="black" dy="0em">Jovan</text>
+<text x="205" y="-244.0" font-size="12" fill="black" dy="0em">Allen</text>
+<text x="205" y="-232.0" font-size="12" fill="black" dy="0em">Nora</text>
+<rect x="35" y="-127.0" width="117" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="40" y="-110.0" font-size="12" fill="black" dy="0em">Team Door</text>
+<text x="40" y="-98.0" font-size="12" fill="black" dy="0em">Savannah</text>
+<text x="40" y="-86.0" font-size="12" fill="black" dy="0em">Nick</text>
+<text x="40" y="-74.0" font-size="12" fill="black" dy="0em">Manuel</text>
+<text x="40" y="-62.0" font-size="12" fill="black" dy="0em">Matthew H</text>
+<rect x="200" y="-127.0" width="117" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="205" y="-110.0" font-size="12" fill="black" dy="0em">Team Window</text>
+<text x="205" y="-98.0" font-size="12" fill="black" dy="0em">Yeon</text>
+<text x="205" y="-86.0" font-size="12" fill="black" dy="0em">Sai</text>
+<text x="205" y="-74.0" font-size="12" fill="black" dy="0em">Cameron M</text>
+<text x="205" y="-62.0" font-size="12" fill="black" dy="0em">Cameron L</text>
+<rect x="35" y="-297.0" width="117" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="40" y="-280.0" font-size="12" fill="black" dy="0em">Team Whiteboard</text>
+<text x="40" y="-268.0" font-size="12" fill="black" dy="0em">Ian</text>
+<text x="40" y="-256.0" font-size="12" fill="black" dy="0em">Zhen</text>
+<text x="40" y="-244.0" font-size="12" fill="black" dy="0em">Brady</text>
+<text x="40" y="-232.0" font-size="12" fill="black" dy="0em">Nima</text>
+<rect x="125" y="-212.0" width="117" height="70" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="130" y="-195.0" font-size="12" fill="black" dy="0em">Team Center</text>
+<text x="130" y="-183.0" font-size="12" fill="black" dy="0em">Leon</text>
+<text x="130" y="-171.0" font-size="12" fill="black" dy="0em">Matthew D</text>
+<text x="130" y="-159.0" font-size="12" fill="black" dy="0em">Jaewook</text>
+<text x="130" y="-147.0" font-size="12" fill="black" dy="0em">Natalie</text>
+<text x="5" y="-330" font-size="12" fill="black" dy="0em">Wednesday, 5 October</text>
 </svg>
