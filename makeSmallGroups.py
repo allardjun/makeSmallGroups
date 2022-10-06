@@ -43,10 +43,10 @@ def makeSmallGroups():
         ySize = 350
         yShift = ySize/2+70
         Teams_list = [
-            ['Lectern',   [200, yShift- 30+12, 117, 70], 4],
+            ['Lectern',      [200, yShift- 30+12, 117, 80], 5],
             ['Door',         [ 35, yShift-200+12, 117, 70], 4],
             ['Window',       [200, yShift-200+12, 117, 70], 4],
-            ['Whiteboard',      [ 35, yShift- 30+12, 117, 70], 4],
+            ['Whiteboard',   [ 35, yShift- 30+12, 117, 70], 4],
             ['Center',       [125, yShift-115+12, 117, 70], 4]
             ]
         datepos = [5, 20]
