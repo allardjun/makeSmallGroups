@@ -16,7 +16,7 @@ def makeSmallGroups():
 
     emSize = 12
 
-    layout = 'B'
+    layout = 'A'
 
     print((courseNumber == 'P230' and layout == 'B'))
 
@@ -26,11 +26,11 @@ def makeSmallGroups():
     if courseNumber == 'M227C':
         ySize = 200
         Teams_list = [
-            ['Whiteboard',   [200, 102, 117, 70], 4],
-            ['Door',         [  5,  17, 117, 70], 4],
-            ['Window',       [250,  17, 117, 70], 4],
-            ['Lectern',      [ 35, 102, 117, 70], 4],
-            ['Projector',    [125,  17, 117, 70], 4]
+            ['Lectern',   [200, 102, 117, 70], 3],
+            ['Window',    [ 35,  17, 117, 70], 4],
+            ['Whiteboard',[200,  17, 117, 70], 4],
+            ['Door',      [ 35, 102, 117, 70], 3]#,
+            #['Projector',    [125,  17, 117, 70], 3]
             ]
         datepos = [5, 20]
     elif courseNumber == 'P50':
@@ -124,8 +124,8 @@ def makeSmallGroups():
 
     os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams_' + courseNumber + '.svg -o teams_' + courseNumber + '.png')
 
-    if courseNumber=='M227C':
-         os.system('./sendToGithub.sh')
+    #if courseNumber=='M227C':
+    #     os.system('./sendToGithub.sh')
 
 if __name__ == '__main__':
     makeSmallGroups()
