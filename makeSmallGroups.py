@@ -14,11 +14,11 @@ def makeSmallGroups():
     else:
         courseNumber = 'M227C'
 
-    emSize = 12
+    emSize = 12 # font size in pixels
 
-    layout = 'A'
+    layout = 'A' 
 
-    print((courseNumber == 'P230' and layout == 'B'))
+    #print((courseNumber == 'P230' and layout == 'B'))
 
     # rectangle positions are specified by bottom left corner
 
@@ -26,7 +26,7 @@ def makeSmallGroups():
     if courseNumber == 'M227C':
         ySize = 200
         Teams_list = [
-            ['Lectern',   [200, 102, 117, 70], 3],
+            ['Lectern',   [200, 102, 117, 70], 3], # x, y, width, height, number of students
             ['Window',    [ 35,  17, 117, 70], 4],
             ['Whiteboard',[200,  17, 117, 70], 4],
             ['Door',      [ 35, 102, 117, 70], 3]#,
@@ -35,7 +35,7 @@ def makeSmallGroups():
         datepos = [5, 20]
     elif courseNumber == 'P50':
         ySize = 200
-        yShift = ySize/2+20
+        yShift = ySize/2+20 
         Teams_list = [
             ['Lectern',     [200, yShift- 30, 117, 70], 4],
             ['Back Corner', [  5, yShift-115, 120, 70], 4],
@@ -47,7 +47,7 @@ def makeSmallGroups():
     elif (courseNumber == 'P230' and layout == 'B'):
         print(layout)
         ySize = 350
-        yShift = ySize/2+70
+        yShift = ySize/2+70 # depracted
         Teams_list = [
             ['Door',          [ 15,  57, 120], 3],
             ['Clock',         [ 15, 142, 117], 3],
@@ -59,7 +59,7 @@ def makeSmallGroups():
         datepos = [5, 20]
     elif courseNumber == 'P230':
         ySize = 350
-        yShift = ySize/2+70
+        yShift = ySize/2+70 # depracted
         Teams_list = [
             ['Lectern',      [200, 227, 117, 80], 5],
             ['Door',         [ 35,  57, 117, 70], 4],
@@ -124,8 +124,8 @@ def makeSmallGroups():
 
     os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams_' + courseNumber + '.svg -o teams_' + courseNumber + '.png')
 
-    #if courseNumber=='M227C':
-    #     os.system('./sendToGithub.sh')
+    if courseNumber=='M227C':
+         os.system('./sendToGithub.sh')
 
 if __name__ == '__main__':
     makeSmallGroups()
