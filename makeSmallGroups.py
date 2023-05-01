@@ -27,8 +27,8 @@ def makeSmallGroups():
         ySize = 200
         Teams_list = [
             ['Lectern',   [200, 102, 117, 70], 3],
-            ['Window',    [ 35,  17, 117, 70], 4],
-            ['Whiteboard',[200,  17, 117, 70], 4],
+            ['Whiteboard',    [ 35,  17, 117, 70], 4],
+            ['Wifi Router',[200,  17, 117, 70], 4],
             ['Door',      [ 35, 102, 117, 70], 3]#,
             #['Projector',    [125,  17, 117, 70], 3]
             ]
@@ -124,8 +124,8 @@ def makeSmallGroups():
 
     os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams_' + courseNumber + '.svg -o teams_' + courseNumber + '.png')
 
-    #if courseNumber=='M227C':
-    #     os.system('./sendToGithub.sh')
+    if courseNumber=='M227C':
+         os.system('./sendToGithub.sh')
 
 if __name__ == '__main__':
     makeSmallGroups()
