@@ -16,7 +16,7 @@ def makeSmallGroups():
 
     emSize = 12 # font size in pixels
 
-    layout = 'A' 
+    layout = 'B' 
 
     #print((courseNumber == 'P230' and layout == 'B'))
 
@@ -49,11 +49,11 @@ def makeSmallGroups():
         ySize = 350
         yShift = ySize/2+70 # depracted
         Teams_list = [
-            ['Door',          [ 15,  57, 120], 3],
+            ['Door',          [ 15,  57, 120], 4],
             ['Clock',         [ 15, 142, 117], 3],
             ['Whiteboards',   [ 15, 227, 121], 4],
-            ['Motion Sensor', [180,  57, 135], 3],
-            ['Metal Disk',    [180, 142, 117], 3],
+            ['Motion Sensor', [180,  57, 135], 4],
+            ['Metal Disk',    [180, 142, 117], 4],
             ['Lectern',       [180, 227, 117], 4]
             ]
         datepos = [5, 20]
