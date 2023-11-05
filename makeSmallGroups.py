@@ -5,7 +5,7 @@ def makeSmallGroups():
     import sys
     import xlsxwriter
     import pandas as pd
-    import drawSvg as draw
+    import drawsvg as draw
     from datetime import date
 
     # Get command-line arguments
@@ -120,7 +120,7 @@ def makeSmallGroups():
    
     d.append(draw.Text(datestr, 12, datepos[0], ySize-datepos[1], fill='black'))
 
-    d.saveSvg('teams_' + courseNumber + '.svg')
+    d.save_svg('teams_' + courseNumber + '.svg')
 
     os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams_' + courseNumber + '.svg -o teams_' + courseNumber + '.png')
 
