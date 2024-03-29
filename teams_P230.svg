@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="380" height="350" viewBox="0 0 380 350" displayInline="False">
+     width="380" height="400" viewBox="0 0 380 400" displayInline="False">
 <defs>
 </defs>
-<rect x="15" y="57" width="120" height="65" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="20" y="110" font-size="12" fill="black">Team Door</text>
-<text x="20" y="98" font-size="12" fill="black">Gustav</text>
-<text x="20" y="86" font-size="12" fill="black">Shaoheng</text>
-<text x="20" y="74" font-size="12" fill="black">Jacy</text>
-<text x="20" y="62" font-size="12" fill="black">Qingyuan</text>
-<rect x="15" y="142" width="117" height="53" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="20" y="183" font-size="12" fill="black">Team Clock</text>
-<text x="20" y="171" font-size="12" fill="black">Dylan</text>
-<text x="20" y="159" font-size="12" fill="black">Luke</text>
-<text x="20" y="147" font-size="12" fill="black">Nicholas</text>
-<rect x="15" y="227" width="121" height="65" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="20" y="280" font-size="12" fill="black">Team Whiteboards</text>
-<text x="20" y="268" font-size="12" fill="black">Austin</text>
-<text x="20" y="256" font-size="12" fill="black">Kyla</text>
-<text x="20" y="244" font-size="12" fill="black">Rany</text>
-<text x="20" y="232" font-size="12" fill="black">Teddy</text>
-<rect x="180" y="57" width="135" height="65" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="185" y="110" font-size="12" fill="black">Team Motion Sensor</text>
-<text x="185" y="98" font-size="12" fill="black">Zhishun</text>
-<text x="185" y="86" font-size="12" fill="black">Arvind</text>
-<text x="185" y="74" font-size="12" fill="black">Yonghan</text>
-<text x="185" y="62" font-size="12" fill="black">Jingcheng</text>
-<rect x="180" y="142" width="117" height="65" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="185" y="195" font-size="12" fill="black">Team Metal Disk</text>
-<text x="185" y="183" font-size="12" fill="black">Caroline</text>
-<text x="185" y="171" font-size="12" fill="black">Luis</text>
-<text x="185" y="159" font-size="12" fill="black">Abbey</text>
-<text x="185" y="147" font-size="12" fill="black">Justin</text>
-<rect x="180" y="227" width="117" height="65" fill="#ffffff" stroke-width="2" stroke="black" />
-<text x="185" y="280" font-size="12" fill="black">Team Lectern</text>
-<text x="185" y="268" font-size="12" fill="black">Ren</text>
-<text x="185" y="256" font-size="12" fill="black">John</text>
-<text x="185" y="244" font-size="12" fill="black">Madison</text>
-<text x="5" y="330" font-size="12" fill="black">Saturday, 4 November</text>
+<rect x="15" y="293" width="120" height="75" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="20" y="310" font-size="12" fill="black">Team Door</text>
+<text x="20" y="322" font-size="12" fill="black">Abbey</text>
+<text x="20" y="334" font-size="12" fill="black">Ren</text>
+<text x="20" y="346" font-size="12" fill="black">Nicholas</text>
+<text x="20" y="358" font-size="12" fill="black">Shaoheng</text>
+<rect x="15" y="208" width="117" height="63" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="20" y="225" font-size="12" fill="black">Team Clock</text>
+<text x="20" y="237" font-size="12" fill="black">Rany</text>
+<text x="20" y="249" font-size="12" fill="black">Justin</text>
+<text x="20" y="261" font-size="12" fill="black">Jacy</text>
+<rect x="15" y="123" width="121" height="75" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="20" y="140" font-size="12" fill="black">Team Whiteboards</text>
+<text x="20" y="152" font-size="12" fill="black">Qingyuan</text>
+<text x="20" y="164" font-size="12" fill="black">Luke</text>
+<text x="20" y="176" font-size="12" fill="black">Luis</text>
+<text x="20" y="188" font-size="12" fill="black">Austin</text>
+<rect x="180" y="293" width="135" height="75" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="185" y="310" font-size="12" fill="black">Team Motion Sensor</text>
+<text x="185" y="322" font-size="12" fill="black">Teddy</text>
+<text x="185" y="334" font-size="12" fill="black">Arvind</text>
+<text x="185" y="346" font-size="12" fill="black">Gustav</text>
+<text x="185" y="358" font-size="12" fill="black">Dylan</text>
+<rect x="180" y="208" width="117" height="75" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="185" y="225" font-size="12" fill="black">Team Metal Disk</text>
+<text x="185" y="237" font-size="12" fill="black">Madison</text>
+<text x="185" y="249" font-size="12" fill="black">Jingcheng</text>
+<text x="185" y="261" font-size="12" fill="black">Yonghan</text>
+<text x="185" y="273" font-size="12" fill="black">Caroline</text>
+<rect x="180" y="123" width="117" height="75" fill="#ffffff" stroke-width="2" stroke="black" />
+<text x="185" y="140" font-size="12" fill="black">Team Lectern</text>
+<text x="185" y="152" font-size="12" fill="black">Zhishun</text>
+<text x="185" y="164" font-size="12" fill="black">John</text>
+<text x="185" y="176" font-size="12" fill="black">Kyla</text>
+<text x="5" y="100" font-size="12" fill="black">Friday, 8 December</text>
 </svg>
