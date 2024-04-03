@@ -27,12 +27,12 @@ def makeSmallGroups():
         ySize = 200
         Teams_list = [
             ['Lectern',   [200, 102, 117, 70], 3],
-            ['Whiteboard',    [ 35,  17, 117, 70], 4],
-            ['Wifi Router',[200,  17, 117, 70], 4],
+            ['Whiteboard',    [ 35,  17, 117, 70], 3],
+            ['Wifi Router',[200,  17, 117, 70], 3],
             ['Door',      [ 35, 102, 117, 70], 3]#,
             #['Projector',    [125,  17, 117, 70], 3]
             ]
-        datepos = [5, 20]
+        datepos = [5, 10]
     elif courseNumber == 'P50':
         ySize = 200
         yShift = ySize/2+20 
@@ -46,17 +46,17 @@ def makeSmallGroups():
         datepos = [5, 20]
     elif (courseNumber == 'P230' and layout == 'B'):
         print(layout)
-        ySize = 350
+        ySize = 400
         yShift = ySize/2+70 # depracted
         Teams_list = [
-            ['Door',          [ 15,  57, 120], 4],
-            ['Clock',         [ 15, 142, 117], 3],
-            ['Whiteboards',   [ 15, 227, 121], 4],
-            ['Motion Sensor', [180,  57, 135], 4],
-            ['Metal Disk',    [180, 142, 117], 4],
-            ['Lectern',       [180, 227, 117], 4]
+            ['Door',          [ 15,  350-57, 120], 4],
+            ['Clock',         [ 15, 350-142, 117], 3],
+            ['Whiteboards',   [ 15, 350-227, 121], 4],
+            ['Motion Sensor', [180, 350- 57, 135], 4],
+            ['Metal Disk',    [180, 350-142, 117], 4],
+            ['Lectern',       [180,350- 227, 117], 4]
             ]
-        datepos = [5, 20]
+        datepos = [5, 100]
     elif courseNumber == 'P230':
         ySize = 350
         yShift = ySize/2+70 # depracted
@@ -67,7 +67,7 @@ def makeSmallGroups():
             ['Whiteboard',   [ 35, 227, 117, 70], 4],
             ['Center',       [125, 142, 117, 70], 4]
             ]
-        datepos = [5, 20]
+        datepos = [5, 0]
 
     # SHUFFLE STUDENTS
 
@@ -100,25 +100,27 @@ def makeSmallGroups():
                 thisTeam['Coords'][0],
                 thisTeam['Coords'][1],
                 thisTeam['Coords'][2],
-                (thisTeam['NumberOfThinkers']+1)*emSize+5,#thisTeam['Coords'][3],
+                (thisTeam['NumberOfThinkers']+1)*emSize+15,
                 fill='#ffffff',stroke_width=2,stroke='black')
 
             groupLabel = draw.Text('Team ' + thisTeam['Name'],
-                12,thisTeam['Coords'][0]+5,thisTeam['Coords'][1]+emSize*thisTeam['NumberOfThinkers']+5,fill='black')
+                12,thisTeam['Coords'][0]+5,
+                thisTeam['Coords'][1]+emSize+5,
+                fill='black')
             d.append(box)
             d.append(groupLabel)
             for iStudent_inThisTeam in range(thisTeam['NumberOfThinkers']):
                 studentLabel = draw.Text(student_list[iStudent],
                     12,
                     thisTeam['Coords'][0]+5,
-                    thisTeam['Coords'][1]+emSize*thisTeam['NumberOfThinkers']+5-emSize*(iStudent_inThisTeam+1),
+                    thisTeam['Coords'][1]+emSize+5+emSize*(iStudent_inThisTeam+1),
                     fill='black')
                 iStudent = iStudent + 1
                 d.append(studentLabel)
                 if iStudent >= len(student_list):
                     break
    
-    d.append(draw.Text(datestr, 12, datepos[0], ySize-datepos[1], fill='black'))
+    d.append(draw.Text(datestr, 12, datepos[0], datepos[1], fill='black'))
 
     d.save_svg('teams_' + courseNumber + '.svg')
 
