@@ -26,10 +26,10 @@ def makeSmallGroups():
     if courseNumber == 'M227C':
         ySize = 200
         Teams_list = [
-            ['Lectern',   [200, 102, 117, 70], 3],
-            ['Whiteboard',    [ 35,  17, 117, 70], 3],
-            ['Wifi Router',[200,  17, 117, 70], 3],
-            ['Door',      [ 35, 102, 117, 70], 3]#,
+            ['LB40',   [200, 102, 117, 70], 3],
+            ['Door',    [ 35,  17, 117, 70], 3],
+            ['Lectern',[200,  17, 117, 70], 4],
+            ['Lkrs Rght',      [ 35, 102, 117, 70], 3]#,
             #['Projector',    [125,  17, 117, 70], 3]
             ]
         datepos = [5, 10]
