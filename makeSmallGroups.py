@@ -16,10 +16,12 @@ def makeSmallGroups():
 
     emSize = 12 # font size in pixels
 
-    layout = 'B' 
+    layout = 'A' 
 
     #print((courseNumber == 'P230' and layout == 'B'))
 
+    # coordinate system: (0,0) is top left corner
+    # positive x is to the right, positive y is down.
     # rectangle positions are specified by bottom left corner
 
     studentListFile = 'studentList_' + courseNumber + '.xlsx'
@@ -58,16 +60,25 @@ def makeSmallGroups():
             ]
         datepos = [5, 100]
     elif courseNumber == 'P230':
-        ySize = 350
-        yShift = ySize/2+70 # depracted
+        ySize = 260
         Teams_list = [
-            ['Lectern',      [200, 227, 117, 80], 5],
-            ['Door',         [ 35,  57, 117, 70], 4],
-            ['Window',       [200,  57, 117, 70], 4],
-            ['Whiteboard',   [ 35, 227, 117, 70], 4],
-            ['Center',       [125, 142, 117, 70], 4]
+            ['Whiteboards', [ 35,  57, 117, 70], 3],
+            ['Lectern',     [200,  57, 117, 70], 3],
+            ['Door',        [ 35, 160, 117, 70], 3],
+            ['Window',      [200, 160, 117, 80], 4],
             ]
-        datepos = [5, 0]
+        datepos = [5, emSize+5]
+    # elif courseNumber == 'P230':
+    #     ySize = 350
+    #     yShift = ySize/2+70 # depracted
+    #     Teams_list = [
+    #         ['Lectern',      [200, 227, 117, 80], 4],
+    #         ['Door',         [ 35,  57, 117, 70], 4],
+    #         ['Window',       [200,  57, 117, 70], 4],
+    #         ['Whiteboard',   [ 35, 227, 117, 70], 4],
+    #         ['Center',       [125, 142, 117, 70], 4]
+    #         ]
+    #     datepos = [5, 0]
 
     # SHUFFLE STUDENTS
 
@@ -124,7 +135,12 @@ def makeSmallGroups():
 
     d.save_svg('teams_' + courseNumber + '.svg')
 
-    os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams_' + courseNumber + '.svg -o teams_' + courseNumber + '.png')
+    #os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams_' + courseNumber + '.svg -o teams_' + courseNumber + '.png')
+
+    from cairosvg import svg2png
+
+    with open('teams_' + courseNumber + '.svg', 'rb') as f:
+        svg2png(file_obj=f, write_to='teams_' + courseNumber + '.png', background_color="white")
 
     if courseNumber=='M227C':
          os.system('./sendToGithub.sh')
