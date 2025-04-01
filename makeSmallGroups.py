@@ -142,8 +142,8 @@ def makeSmallGroups():
     with open('teams_' + courseNumber + '.svg', 'rb') as f:
         svg2png(file_obj=f, write_to='teams_' + courseNumber + '.png', background_color="white")
 
-    if courseNumber=='M227C':
-         os.system('./sendToGithub.sh')
+    # if courseNumber=='M227C':
+    #      os.system('./sendToGithub.sh')
 
 if __name__ == '__main__':
     makeSmallGroups()
