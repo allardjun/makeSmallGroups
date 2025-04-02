@@ -8,6 +8,9 @@ def makeSmallGroups():
     import drawsvg as draw
     from datetime import date
 
+    from cairosvg import svg2png
+
+
     # Get command-line arguments
     if len(sys.argv)>1:
         courseNumber = sys.argv[1]
@@ -17,6 +20,7 @@ def makeSmallGroups():
     emSize = 12 # font size in pixels
 
     layout = 'A' 
+    # layout = 'B' 
 
     #print((courseNumber == 'P230' and layout == 'B'))
 
@@ -25,7 +29,18 @@ def makeSmallGroups():
     # rectangle positions are specified by bottom left corner
 
     studentListFile = 'studentList_' + courseNumber + '.xlsx'
-    if courseNumber == 'M227C':
+    if courseNumber == 'M227C' and layout == 'A':
+        ySize = 100
+        x_shift = 90
+        Teams_list = [
+            ['Lectern', [ 17+0*x_shift, 17, 80, 70], 4],
+            ['B',       [ 17+1*x_shift, 17, 80, 70], 4],
+            ['C',       [ 17+2*x_shift, 17, 80, 70], 4],
+            ['Exit',    [ 17+3*x_shift, 17, 80, 70], 3]#,
+            #['Projector',    [125,  17, 117, 70], 3]
+            ]
+        datepos = [5, 10]
+    if courseNumber == 'M227C' and layout == 'B':
         ySize = 200
         Teams_list = [
             ['LB40',   [200, 102, 117, 70], 3],
@@ -137,13 +152,11 @@ def makeSmallGroups():
 
     #os.system('/Applications/Inkscape.app/Contents/MacOS/inkscape teams_' + courseNumber + '.svg -o teams_' + courseNumber + '.png')
 
-    from cairosvg import svg2png
+    # with open('teams_' + courseNumber + '.svg', 'rb') as f:
+    #     svg2png(file_obj=f, write_to='teams_' + courseNumber + '.png', background_color="white")
 
-    with open('teams_' + courseNumber + '.svg', 'rb') as f:
-        svg2png(file_obj=f, write_to='teams_' + courseNumber + '.png', background_color="white")
-
-    # if courseNumber=='M227C':
-    #      os.system('./sendToGithub.sh')
+    if courseNumber=='M227C':
+         os.system('./sendToGithub.sh')
 
 if __name__ == '__main__':
     makeSmallGroups()
