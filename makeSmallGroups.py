@@ -119,32 +119,37 @@ def makeSmallGroups():
 
     d = draw.Drawing(380, ySize, origin=(0,0), displayInline=False)
 
-    iStudent = 0
-    for iTeam, thisTeam in Teams.iterrows():
-        if iStudent < len(student_list):
-            box = draw.Rectangle(
-                thisTeam['Coords'][0],
-                thisTeam['Coords'][1],
-                thisTeam['Coords'][2],
-                (thisTeam['NumberOfThinkers']+1)*emSize+15,
-                fill='#ffffff',stroke_width=2,stroke='black')
+    if sys.argv[2]=="open":
+        print('Open seating')
+        d.append(draw.Text("OPEN SEATING TODAY", 12, datepos[0], datepos[1]+emSize+15, fill='black'))
 
-            groupLabel = draw.Text('Team ' + thisTeam['Name'],
-                12,thisTeam['Coords'][0]+5,
-                thisTeam['Coords'][1]+emSize+5,
-                fill='black')
-            d.append(box)
-            d.append(groupLabel)
-            for iStudent_inThisTeam in range(thisTeam['NumberOfThinkers']):
-                studentLabel = draw.Text(student_list[iStudent],
-                    12,
-                    thisTeam['Coords'][0]+5,
-                    thisTeam['Coords'][1]+emSize+5+emSize*(iStudent_inThisTeam+1),
+    else:
+        iStudent = 0
+        for iTeam, thisTeam in Teams.iterrows():
+            if iStudent < len(student_list):
+                box = draw.Rectangle(
+                    thisTeam['Coords'][0],
+                    thisTeam['Coords'][1],
+                    thisTeam['Coords'][2],
+                    (thisTeam['NumberOfThinkers']+1)*emSize+15,
+                    fill='#ffffff',stroke_width=2,stroke='black')
+
+                groupLabel = draw.Text('Team ' + thisTeam['Name'],
+                    12,thisTeam['Coords'][0]+5,
+                    thisTeam['Coords'][1]+emSize+5,
                     fill='black')
-                iStudent = iStudent + 1
-                d.append(studentLabel)
-                if iStudent >= len(student_list):
-                    break
+                d.append(box)
+                d.append(groupLabel)
+                for iStudent_inThisTeam in range(thisTeam['NumberOfThinkers']):
+                    studentLabel = draw.Text(student_list[iStudent],
+                        12,
+                        thisTeam['Coords'][0]+5,
+                        thisTeam['Coords'][1]+emSize+5+emSize*(iStudent_inThisTeam+1),
+                        fill='black')
+                    iStudent = iStudent + 1
+                    d.append(studentLabel)
+                    if iStudent >= len(student_list):
+                        break
    
     d.append(draw.Text(datestr, 12, datepos[0], datepos[1], fill='black'))
 
