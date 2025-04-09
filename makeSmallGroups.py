@@ -35,8 +35,8 @@ def makeSmallGroups():
         Teams_list = [
             ['Lectern', [ 17+0*x_shift, 17, 80, 70], 4],
             ['B',       [ 17+1*x_shift, 17, 80, 70], 4],
-            ['C',       [ 17+2*x_shift, 17, 80, 70], 4],
-            ['Exit',    [ 17+3*x_shift, 17, 80, 70], 3]#,
+            ['Projector',       [ 17+2*x_shift, 17, 80, 70], 4],
+            ['Green Board',    [ 17+3*x_shift, 17, 80, 70], 3]#,
             #['Projector',    [125,  17, 117, 70], 3]
             ]
         datepos = [5, 10]
@@ -119,7 +119,8 @@ def makeSmallGroups():
 
     d = draw.Drawing(380, ySize, origin=(0,0), displayInline=False)
 
-    if sys.argv[2]=="open":
+
+    if len(sys.argv)>2 and sys.argv[2]=="open":
         print('Open seating')
         d.append(draw.Text("OPEN SEATING TODAY", 12, datepos[0], datepos[1]+emSize+15, fill='black'))
 
